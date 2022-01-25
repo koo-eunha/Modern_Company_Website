@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/finalcss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Final Project | Contact</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="home.html" id="logo" class="lfloat col-4 center">My Company</a>
+      <div class="lfloat col-2 navfiller">&nbsp;</div>
+      <ul class="nav">
+        <li class="lfloat col-12 center">
+          <a href="home.html">HOME</a>
+        </li>
+        <li class="menu-active lfloat col-12 center">
+          <a href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </header>
+    <div class="clear"></div>
+    <div id="contactbg" class="bg">
+      <span>CONTACT US</span>
+    </div>
+
+    <div class="container">
+      <article id="formArticle" class="article">
+        <p>
+          CONTACT US WITH ANY QUESTION THAT YOU MIGHT HAVE. PLEASE NOTE THAT WE
+          <strong>DO NOT</strong> ACCEPT INAPPROPRIATE MESSAGES. <br /><br />
+          <em>THANK YOU FOR YOUR UNDERSTANDING</em>.
+        </p>
+      </article>
+      <section>
+        <form
+          method="get"
+          onsubmit="alert('Thank you. Your message has been sent.')"
+        >
+          <div class="form-wrapper">
+            <div class="form-group">
+              <h3 id="name">Name *</h3>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="form-group">
+              <h3>Phone Number</h3>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <h3>Email Address *</h3>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" />
+            </div>
+            <div class="form-group">
+              <h3>Subject *</h3>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <h3>Message *</h3>
+            </div>
+            <div class="form-group">
+              <textarea
+                placeholder="Type your message here..."
+                maxlength="1000"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="SUBMIT" />
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <article class="article">
+        <p>
+          MYCOMPANY
+          <br />
+          1430 TRAFALGAR RD
+          <br />
+          OAKVILLE, ON L6H 2L1
+          <br />
+          (905) 845-9430
+        </p>
+      </article>
+      <section class="map">
+        <div
+          style="
+            text-decoration: none;
+            overflow: hidden;
+            max-width: 100%;
+            width: 920px;
+            height: 500px;
+          "
+        >
+          <div
+            id="gmapdisplay"
+            style="height: 100%; width: 100%; max-width: 100%"
+          >
+            <iframe
+              style="height: 100%; width: 100%; border: 0"
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=sheridan+college+trafalgar+campus&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            ></iframe>
+          </div>
+          <a
+            class="googlehtml"
+            href="https://dedicatedserver.expert"
+            id="authmap-data"
+            >dedicatedserver.expert</a
+          ><style>
+            #gmapdisplay img {
+              max-width: none !important;
+              background: none !important;
+              font-size: inherit;
+              font-weight: inherit;
+            }
+          </style>
+        </div>
+      </section>
+
+      <br /><br /><br /><br />
+      <footer>&copy; 2021 myCompany</footer>
+    </div>
+  </body>
+</html>
